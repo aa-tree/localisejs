@@ -1,0 +1,23 @@
+{
+  "name": "localisejs",
+  "version": "1.0.0",
+  "description": "A package that helps you translate your JS app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aa-tree/localisejs.git"
+  },
+  "author": "Anshuk Attri",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aa-tree/localisejs/issues"
+  },
+  "homepage": "https://github.com/aa-tree/localisejs#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  }
+}
