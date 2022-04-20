@@ -1,4 +1,4 @@
-{
+export const all={
     "ABOUT": {
         "en": "About",
         "hi": "हमारे बारे में"

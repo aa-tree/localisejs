@@ -1,6 +1,6 @@
 {
   "name": "localisejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that helps you translate your JS app.",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,6 @@
   "directories": {
     "doc": "docs",
     "test": "tests"
-  }
+  },
+  "type": "module"
 }

@@ -1,11 +1,14 @@
-import * as common_strings from './common_strings.json' 
-import DataLists from './DataLists'
+import * as common_strings from './common_strings.js' 
+import DataLists from './DataLists.js'
 
 class LocaliseJS {
   constructor(...customStrings)
   {
     this.customStrings= customStrings
     this.dataLists=new DataLists()
+
+
+
   }
 
   async getAsync(code, lang="en")
@@ -34,7 +37,6 @@ class LocaliseJS {
     if(this.customStrings!=null&&typeof this.customStrings!="undefined")
     {
 
-      console.clear()
       for(var args in this.customStrings)
       {
         var toReturn=this.getCodeFromJSON(this.customStrings[args],code, lang)
@@ -51,12 +53,12 @@ class LocaliseJS {
       }
       else
       {
-        return this.getCodeFromJSON(common_strings,code,lang)  
+        return this.getCodeFromJSON(common_strings.all,code,lang)  
       }
     }
     else
     {
-      return this.getCodeFromJSON(common_strings,code,lang)
+      return this.getCodeFromJSON(common_strings.all,code,lang)
     }
   }
 
